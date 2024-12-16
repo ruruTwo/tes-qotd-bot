@@ -11,8 +11,7 @@ const URL = process.env.QUESTIONS_URL;
 const TOKEN = process.env.DISCORD_TOKEN;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GIST_ID = process.env.CONFIG_ID;
-const INTERVAL = process.env.INTERVAL_HOURS * 60 * 60 * 1000; // Every 48 hours (in milliseconds)
-
+const INTERVAL = process.env.INTERVAL_HOURS * 60 * 60 * 1000;
 app.get('/', (req, res) => {
     res.send('Bot is running!');
 });
