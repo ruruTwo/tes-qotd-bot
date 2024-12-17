@@ -65,7 +65,6 @@ client.once('ready', () => {
 
 async function postQuestion() {
     let questions;
-    let questionNumber; 
     try {
         questions = await loadQuestions();
         config = await getConfigValues();
